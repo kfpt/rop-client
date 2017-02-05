@@ -260,11 +260,17 @@ public class DefaultRopClient implements RopClient {
         	try {
         		responseContent = restTemplate.postForObject(serverUrl, toMultiValueMap(requestParams), String.class);
 			} catch (Exception e) {
+				// http访问异常封装进ErrorResponse
 				DefaultCompositeResponse<T> compositeResponse = new DefaultCompositeResponse<T>(false);
 				ErrorResponse errorResponse = new ErrorResponse();
 				errorResponse.setCode("7");
 				errorResponse.setMessage(e.getMessage());
-				errorResponse.setSolution("请检查是否serverUrl有误，或请求参数过长等相关问题");
+				if("zh_CN".equals(locale.toString())){
+					errorResponse.setSolution("请检查是否serverUrl有误，或请求参数过长等相关问题");
+				}
+				else{
+					errorResponse.setSolution("please check whether the serverUrl is wrong, or request parameters are too long and other related issues");
+				}
                 compositeResponse.setErrorResponse(errorResponse);
                 return compositeResponse;
 			}
