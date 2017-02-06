@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
-
+	<modelVersion>4.0.0</modelVersion>
+	
 	<groupId>com.rop</groupId>
 	<artifactId>rop-client</artifactId>
 	<version>1.0.4</version>
-
+	
 	<packaging>jar</packaging>
 	<name>com.rop:rop-client</name>
 	<description>rest open platform client</description>
 	<url>https://github.com/kfpt/rop-client</url>
-
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -25,13 +23,11 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-
 	<scm>
 		<connection>scm:git:https://github.com/kfpt/rop-client.git</connection>
 		<developerConnection>scm:git:https://github.com/kfpt/rop-client.git</developerConnection>
 		<url>git:https://github.com/kfpt/rop-client.git</url>
 	</scm>
-
 	<developers>
 		<developer>
 			<name>kfpt</name>
@@ -43,12 +39,12 @@
 		<file.encoding>UTF-8</file.encoding>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
-
 		<jackson.version>1.9.5</jackson.version>
 		<spring.version>3.2.3.RELEASE</spring.version>
 		<jackson.xml.version>2.3.2</jackson.xml.version>
 		<codec.version>1.6</codec.version>
 	</properties>
+	
 
 	<dependencies>
 		<dependency>
@@ -56,24 +52,6 @@
 			<artifactId>spring-web</artifactId>
 			<version>${spring.version}</version>
 			<scope>provided</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>aopalliance</groupId>
-					<artifactId>aopalliance</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-aop</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-context</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-beans</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 		<dependency>
