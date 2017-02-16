@@ -8,12 +8,12 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.rop</groupId>
+	<groupId>com.zbj.zop</groupId>
 	<artifactId>rop-client</artifactId>
 	<version>1.0.4</version>
 	
 	<packaging>jar</packaging>
-	<name>com.rop:rop-client</name>
+	<name>com.zbj.zop:rop-client</name>
 	<description>rest open platform client</description>
 	<url>https://github.com/kfpt/rop-client</url>
 	<licenses>
