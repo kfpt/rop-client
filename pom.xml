@@ -44,7 +44,6 @@
 		<jackson.xml.version>2.3.2</jackson.xml.version>
 		<codec.version>1.6</codec.version>
 	</properties>
-	
 
 	<dependencies>
 		<dependency>
