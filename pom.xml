@@ -40,7 +40,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.7</java.version>
 		<jackson.version>1.9.5</jackson.version>
-		<spring.version>3.2.3.RELEASE</spring.version>
+		<spring.version>3.2.18.RELEASE</spring.version>
 		<jackson.xml.version>2.3.2</jackson.xml.version>
 		<codec.version>1.6</codec.version>
 	</properties>
